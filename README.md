@@ -1,4 +1,4 @@
-# Open Psychological Science Website
+# Open Psychological Science Nigeria Website
 
 This is the repository for the [Open Psychological Science Nigeria](https://open-psychological-science-nigeria.github.io
 /) webpage. We use Jekyll to run our GitHub page.
@@ -51,13 +51,13 @@ joined: 2026
 ---
 ```
 
-Position options: `pi`, `postdoc`, `gradstudent`, `researchstaff`, `visiting`, `alumni`
+Position options: `advisory board`, `team`, `
 
 The avatar should be placed in `images/people/` folder.
 
-### Add new publications
+### Projects
 
-Publications are listed in `publications.md`. Add new publications following the existing format.
+Projects are listed in `Projects.md`. Add new publications following the existing format.
 
 ### Add news
 
