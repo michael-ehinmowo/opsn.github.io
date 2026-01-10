@@ -2,64 +2,47 @@
 #        OPSN         #
 # # # # # # # # # # # #
 
-# Basic
-name:               "Open Psychological Science Nigeria"
-title:              "Open Psychological Science Nigeria"
-description:        "Welcome! We are a community dedicated to advancing **transparent, reproducible, and open psychological research in Nigeria."
+# Site Identity
+name: "Open Psychological Science Nigeria"
+title: "Open Psychological Science Nigeria"
+description: "A community dedicated to advancing transparent, reproducible, and open psychological research in Nigeria."
 
+# URL Configuration
+url: "" 
+baseurl: "" #For Root Domain
+permalink: /:year/:month/:day/:title.html
 
-# URL
-url:                ""
-baseurl:
-#baseurl:            "" #For Root Domain
-permalink:          /:year/:month/:day/:title.html
-
-# Markdown
-markdown:           kramdown
-
-# Highlighter
-highlighter:        rouge
-
-# Navigation
+# Navigation (Restricted to 5 core sections)
 nav:
-  - name:           "home"
-    href:           "/"
-  - name:           "about"
-    href:           "/about"
-  - name:           "resources"
-    href:           "/resources"
-  - name:           "events"
-    href:           "/events"
-  - name:           "blog"
-    href:           "/blog"
+  - name: "home"
+    href: "/"
+  - name: "about"
+    href: "/about"
+  - name: "resources"
+    href: "/resources"
+  - name: "blog"
+    href: "/blog"
+  - name: "events"
+    href: "/events"
 
-# Sass
+# Build Settings
+markdown: kramdown
+highlighter: rouge
 sass:
-  style:            :compressed
+  style: :compressed
 
-# Scopes
+# Layout Defaults
 defaults:
-  -
-    scope:
-      path:         ""
-      type:         "pages"
+  - scope:
+      path: ""
+      type: "pages"
     values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts" # This handles the Blog entries
     values:
-      layout:       "post"
-  -
-    scope:
-      path:         ""
-      type:         "people"
-    values:
-      layout:       "profile"
+      layout: "post"
 
-
-collections:
-  people:
-    output: true
-    permalink: /people/:title/index.html
+# Optional: If 'Events' or 'Resources' use unique layouts 
+# you can add them to collections here.
